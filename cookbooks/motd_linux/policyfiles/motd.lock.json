@@ -1,0 +1,115 @@
+{
+  "revision_id": "dc15d0e65cd7edda5dc4a781c4db7e1ec38cee72cb6443bf6b997bfcc3717bcf",
+  "name": "motd_linux",
+  "run_list": [
+    "recipe[motd::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "chef_run_recorder": {
+      "version": "1.0.1",
+      "identifier": "7b248ee8d484dde6eb53bd951abf5ab04bf7cd61",
+      "dotted_decimal_identifier": "34661618345608413.64997989538929343.99713235275105",
+      "cache_key": "chef_run_recorder-1.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_run_recorder/versions/1.0.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/chef_run_recorder/versions/1.0.1/download",
+        "version": "1.0.1"
+      }
+    },
+    "motd": {
+      "version": "1.0.1",
+      "identifier": "78f86103bc61f7d9e32497b5b7e5d2a96c980ab1",
+      "dotted_decimal_identifier": "34050092763472375.61329816249808869.231625113209521",
+      "cache_key": "motd-1.0.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/motd/versions/1.0.1/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/motd/versions/1.0.1/download",
+        "version": "1.0.1"
+      }
+    },
+    "motd_chef_status": {
+      "version": "1.0.3",
+      "identifier": "191c41385dde17fda83af6d6e8a28f783ea98896",
+      "dotted_decimal_identifier": "7067940861894167.71398140310644898.157746610145430",
+      "cache_key": "motd_chef_status-1.0.3-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/motd_chef_status/versions/1.0.3/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/motd_chef_status/versions/1.0.3/download",
+        "version": "1.0.3"
+      }
+    },
+    "motd_linux": {
+      "version": "0.1.0",
+      "identifier": "3a1634c70271a193e0e94bc3e0986c620e00f890",
+      "dotted_decimal_identifier": "16349964582154657.41624114179596440.119168397539472",
+      "source": "..",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": "https://mosesbenjamin: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@github.com/mosesbenjamin/chef_linux.git",
+        "revision": "30c9e250b423094aba8d187fe56af435aca64d2f",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": ".."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "chef_run_recorder",
+        "= 1.0.1"
+      ],
+      [
+        "motd",
+        "= 1.0.1"
+      ],
+      [
+        "motd_chef_status",
+        "= 1.0.3"
+      ],
+      [
+        "motd_linux",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "chef_run_recorder (1.0.1)": [
+
+      ],
+      "motd (1.0.1)": [
+
+      ],
+      "motd_chef_status (1.0.3)": [
+        [
+          "chef_run_recorder",
+          ">= 0.0.0"
+        ]
+      ],
+      "motd_linux (0.1.0)": [
+        [
+          "motd",
+          "~> 1.0.1"
+        ],
+        [
+          "motd_chef_status",
+          "~> 1.0.3"
+        ]
+      ]
+    }
+  }
+}
