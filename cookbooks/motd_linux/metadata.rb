@@ -1,6 +1,6 @@
 name 'motd_linux'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Sunday Moses Benjamin'
+maintainer_email 'deesudo7@gmail.com'
 license 'All Rights Reserved'
 description 'Installs/Configures motd_linux'
 version '0.1.0'
